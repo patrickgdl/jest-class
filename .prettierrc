@@ -1,0 +1,6 @@
+{
+  "tailingComma": true,
+  "singleQuote": true,
+  "semi": true,
+  "arrowParens": "always"
+}
