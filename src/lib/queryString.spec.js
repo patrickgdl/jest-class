@@ -1,6 +1,6 @@
 // const { sum } = require('./queryString')
 
-const { queryString, parse } = require('./queryString');
+import { queryString, parse } from './queryString';
 
 describe('Object to query string', () => {
   it('should create a valid query string when a object is passed', () => {

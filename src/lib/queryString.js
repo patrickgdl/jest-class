@@ -6,9 +6,10 @@ const objecToQueryString = ([key, value]) => {
   return `${key}=${value}`;
 };
 
-module.exports.queryString = (obj) =>
-  Object.entries(obj).map(objecToQueryString).join('&');
+export function queryString(obj) {
+  return Object.entries(obj).map(objecToQueryString).join('&');
+}
 
-module.exports.parse = (string) => {
+export function parse(string) {
   return Object.fromEntries(string.split('&').map((value) => value.split('=')));
-};
+}
